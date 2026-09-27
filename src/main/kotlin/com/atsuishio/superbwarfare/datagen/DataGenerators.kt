@@ -39,5 +39,6 @@ object DataGenerators {
         generator.addProvider(event.includeServer(), ModAdvancementProvider(packOutput, existingFileHelper))
         generator.addProvider(event.includeServer(), ModPerkTagProvider(packOutput, lookupProvider, existingFileHelper))
         generator.addProvider(event.includeServer(), ModWreckageLootProvider(packOutput, existingFileHelper))
+        generator.addProvider(event.includeClient(), ModSoundProvider(packOutput, existingFileHelper))
     }
 }
